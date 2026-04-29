@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Lastcell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Lastcell</a>
+    <nav class="nav">
+      <a href="shop.html">Shop</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cart-btn" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>About Lastcell</h1>
+      <p>Our story and what we stand for.</p>
+    </section>
+
+    <div class="content-page">
+      <p>Lastcell began in a small workshop with a simple idea: clothing should be made to last, in colours that don’t shout, and with a feel that gets better over time. We wanted to step away from fast fashion and back toward things that are built by hand and chosen with care.</p>
+
+      <h2>What we believe</h2>
+      <p>We believe in fewer, better pieces. Every garment is designed to outlast trends—clean lines, natural fibres, and quality that endures. No logos. No noise. Just honest, rustic simplicity that fits into your life for years.</p>
+
+      <h2>How we make</h2>
+      <p>We work with natural materials: linen, cotton, wool. Our palette stays neutral—earth tones, cream, and deep browns—so pieces work together and age gracefully. We’d rather you wear one coat for a decade than replace a closet every season.</p>
+
+      <h2>Where we’re going</h2>
+      <p>We’re still small, and we like it that way. We’re focused on growing thoughtfully: better fabrics, clearer supply chains, and a community that values the same things we do. Thank you for being part of it.</p>
+
+      <p style="margin-top: 2rem;"><a href="contact.html" class="btn btn-primary">Get in touch</a></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo">Lastcell</a>
+      <div class="footer-links">
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="copyright">© 2025 Lastcell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn close-cart" id="close-cart" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-footer">
+      <p class="cart-total">Total: $<span id="cart-total">0</span></p>
+      <button class="btn btn-primary btn-full">Checkout</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

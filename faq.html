@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Lastcell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Lastcell</a>
+    <nav class="nav">
+      <a href="shop.html">Shop</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cart-btn" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>FAQ</h1>
+      <p>Common questions answered.</p>
+    </section>
+
+    <div class="content-page">
+      <h2>Do you offer free shipping?</h2>
+      <p>We offer free standard shipping on orders over a set amount. The threshold and current offers are shown at checkout.</p>
+
+      <h2>How do I know my size?</h2>
+      <p>Each product page includes a size guide. If you’re between sizes or unsure, <a href="contact.html">contact us</a> and we’ll help you choose.</p>
+
+      <h2>What materials do you use?</h2>
+      <p>We focus on natural fibres: cotton, linen, and wool. Product descriptions list exact composition for each piece.</p>
+
+      <h2>Can I cancel or change my order?</h2>
+      <p>If your order hasn’t shipped yet, get in touch and we’ll try to update or cancel it. Once it’s dispatched, you can return it under our <a href="returns.html">returns policy</a>.</p>
+
+      <h2>Do you ship internationally?</h2>
+      <p>Yes, to select countries. Shipping costs and delivery times vary. You may be responsible for import duties or taxes in your country.</p>
+
+      <p style="margin-top: 2rem;">Still have a question? <a href="contact.html">Contact us</a>.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo">Lastcell</a>
+      <div class="footer-links">
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="copyright">© 2025 Lastcell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn close-cart" id="close-cart" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-footer">
+      <p class="cart-total">Total: $<span id="cart-total">0</span></p>
+      <button class="btn btn-primary btn-full">Checkout</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

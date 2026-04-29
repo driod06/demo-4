@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Returns — Lastcell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Lastcell</a>
+    <nav class="nav">
+      <a href="shop.html">Shop</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="cart-btn" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Returns</h1>
+      <p>Simple and straightforward.</p>
+    </section>
+
+    <div class="content-page">
+      <h2>Return window</h2>
+      <p>You may return unworn, unwashed items with tags attached within 30 days of delivery for a full refund or exchange.</p>
+
+      <h2>How to return</h2>
+      <ul>
+        <li>Email us or use the contact form to request a return. We’ll send you a prepaid label and instructions.</li>
+        <li>Pack the item securely and drop it off with the carrier.</li>
+        <li>Once we receive and inspect the item, we’ll process your refund or send your exchange. Refunds are issued to the original payment method.</li>
+      </ul>
+
+      <h2>Exchanges</h2>
+      <p>If you need a different size or colour, request an exchange when you contact us. We’ll do our best to fulfil it subject to stock.</p>
+
+      <p><a href="contact.html">Contact us</a> to start a return or exchange.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo">Lastcell</a>
+      <div class="footer-links">
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="copyright">© 2025 Lastcell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="icon-btn close-cart" id="close-cart" aria-label="Close cart">×</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-footer">
+      <p class="cart-total">Total: $<span id="cart-total">0</span></p>
+      <button class="btn btn-primary btn-full">Checkout</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
