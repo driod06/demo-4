@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lastcell — Clothing Store</title>
+  <title>LASTCELL // Cyber Sigilism</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="noise"></div>
   <header class="header">
-    <a href="index.html" class="logo">Lastcell</a>
+    <a href="index.html" class="logo">LASTCELL</a>
     <nav class="nav">
-      <a href="shop.html">Shop</a>
-      <a href="collections.html">Collections</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="#shop">ARCHIVE</a>
+      <a href="#drop">DROP</a>
+      <a href="#manifest">MANIFEST</a>
+      <a href="#signal">SIGNAL</a>
     </nav>
     <div class="header-actions">
       <button class="icon-btn" id="cart-btn" aria-label="Cart">
@@ -30,11 +31,12 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="drop">
       <div class="hero-content">
-        <h1>Lastcell</h1>
-        <p class="hero-tagline">Minimal. Timeless. Handcrafted.</p>
-        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        <p class="kicker">PHASE_07 / RAW GARMENTS</p>
+        <h1>FORGED<br>IN STATIC</h1>
+        <p class="hero-tagline">Cyber sigil cuts, rough edges, black-metal street forms.</p>
+        <a href="#shop" class="btn btn-primary">ENTER ARCHIVE</a>
       </div>
       <div class="hero-visual">
         <div class="hero-block hero-block-1"></div>
@@ -43,121 +45,90 @@
       </div>
     </section>
 
-    <section class="lookbook">
-      <h2 class="section-title">Daily Looks</h2>
-      <div class="lookbook-grid">
-        <div class="lookbook-item lookbook-1"></div>
-        <div class="lookbook-item lookbook-2"></div>
-        <div class="lookbook-item lookbook-3"></div>
-        <div class="lookbook-item lookbook-4"></div>
-      </div>
+    <section class="sigil-band">
+      <p>LASTCELL // NO POLISH // PURE SIGNAL // LASTCELL // NO POLISH // PURE SIGNAL</p>
     </section>
 
     <section class="shop" id="shop">
-      <h2 class="section-title">New Arrivals</h2>
+      <h2 class="section-title">CURRENT UNITS</h2>
       <div class="product-grid">
-        <article class="product-card" data-id="1">
-          <div class="product-image">
-            <div class="product-placeholder product-a"></div>
-            <button class="quick-add" data-name="Oversized Tee" data-price="48">Add to Cart</button>
-          </div>
+        <article class="product-card">
+          <div class="product-image product-a"></div>
           <div class="product-info">
-            <h3>Oversized Tee</h3>
-            <span class="price">$48</span>
+            <h3>VOID TEE</h3>
+            <span class="price">$58</span>
+            <button class="quick-add" data-name="VOID TEE" data-price="58">ADD UNIT</button>
           </div>
         </article>
-        <article class="product-card" data-id="2">
-          <div class="product-image">
-            <div class="product-placeholder product-b"></div>
-            <button class="quick-add" data-name="Wide Leg Trousers" data-price="92">Add to Cart</button>
-          </div>
+        <article class="product-card">
+          <div class="product-image product-b"></div>
           <div class="product-info">
-            <h3>Wide Leg Trousers</h3>
-            <span class="price">$92</span>
+            <h3>SIGIL PANTS</h3>
+            <span class="price">$110</span>
+            <button class="quick-add" data-name="SIGIL PANTS" data-price="110">ADD UNIT</button>
           </div>
         </article>
-        <article class="product-card" data-id="3">
-          <div class="product-image">
-            <div class="product-placeholder product-c"></div>
-            <button class="quick-add" data-name="Cropped Blazer" data-price="156">Add to Cart</button>
-          </div>
+        <article class="product-card">
+          <div class="product-image product-c"></div>
           <div class="product-info">
-            <h3>Cropped Blazer</h3>
-            <span class="price">$156</span>
+            <h3>BLADE BLAZER</h3>
+            <span class="price">$168</span>
+            <button class="quick-add" data-name="BLADE BLAZER" data-price="168">ADD UNIT</button>
           </div>
         </article>
-        <article class="product-card" data-id="4">
-          <div class="product-image">
-            <div class="product-placeholder product-d"></div>
-            <button class="quick-add" data-name="Wool Coat" data-price="248">Add to Cart</button>
-          </div>
+        <article class="product-card">
+          <div class="product-image product-d"></div>
           <div class="product-info">
-            <h3>Wool Coat</h3>
-            <span class="price">$248</span>
+            <h3>RITUAL COAT</h3>
+            <span class="price">$260</span>
+            <button class="quick-add" data-name="RITUAL COAT" data-price="260">ADD UNIT</button>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="collections" id="collections">
-      <div class="collection-row">
-        <div class="collection-card collection-card-large">
-          <div class="collection-bg collection-men"></div>
-          <div class="collection-overlay">
-            <h3>Men</h3>
-            <a href="collections.html#men" class="link-arrow">View collection →</a>
-          </div>
+    <section class="collections">
+      <div class="collection-card collection-men">
+        <div class="collection-overlay">
+          <h3>CORE // MEN</h3>
+          <a href="#" class="link-arrow">OPEN NODE</a>
         </div>
-        <div class="collection-card">
-          <div class="collection-bg collection-women"></div>
-          <div class="collection-overlay">
-            <h3>Women</h3>
-            <a href="collections.html#women" class="link-arrow">View →</a>
-          </div>
+      </div>
+      <div class="collection-card collection-women">
+        <div class="collection-overlay">
+          <h3>CORE // WOMEN</h3>
+          <a href="#" class="link-arrow">OPEN NODE</a>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="about-inner">
-        <h2 class="section-title">About Lastcell</h2>
-        <p class="about-text">We believe in fewer, better pieces. Every garment is designed to outlast trends—clean lines, natural fibres, and quality that endures. No logos. No noise. Just honest, rustic simplicity.</p>
-        <a href="about.html" class="btn btn-outline" style="margin-top: 1.5rem;">Read our story</a>
-      </div>
+    <section class="manifest" id="manifest">
+      <h2 class="section-title">MANIFEST</h2>
+      <p>LASTCELL builds anti-clean silhouettes for concrete nights and high-noise mornings. We keep forms sharp, textures raw, and graphics occult. No soft branding. No fake luxury. Only impact.</p>
     </section>
 
-    <section class="contact" id="contact">
-      <h2 class="section-title">Stay in touch</h2>
+    <section class="signal" id="signal">
+      <h2 class="section-title">GET THE SIGNAL</h2>
       <form class="newsletter-form" id="newsletter-form">
-        <input type="email" placeholder="Your email" required>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <input type="email" placeholder="transmission@node.net" required>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
       </form>
-      <p style="text-align: center; margin-top: 1rem;"><a href="contact.html" style="color: var(--brown-mid); text-decoration: underline;">Contact us</a></p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <a href="index.html" class="logo">Lastcell</a>
-      <div class="footer-links">
-        <a href="shipping.html">Shipping</a>
-        <a href="returns.html">Returns</a>
-        <a href="faq.html">FAQ</a>
-        <a href="privacy.html">Privacy</a>
-      </div>
-      <p class="copyright">© 2025 Lastcell. All rights reserved.</p>
-    </div>
+    <p>LASTCELL // CYBER SIGILISM GARMENTS // 2026</p>
   </footer>
 
   <aside class="cart-drawer" id="cart-drawer">
     <div class="cart-header">
-      <h3>Your Cart</h3>
+      <h3>CART NODE</h3>
       <button class="icon-btn close-cart" id="close-cart" aria-label="Close cart">×</button>
     </div>
     <ul class="cart-items" id="cart-items"></ul>
     <div class="cart-footer">
-      <p class="cart-total">Total: $<span id="cart-total">0</span></p>
-      <button class="btn btn-primary btn-full">Checkout</button>
+      <p class="cart-total">TOTAL: $<span id="cart-total">0</span></p>
+      <button class="btn btn-primary btn-full">CHECKOUT</button>
     </div>
   </aside>
   <div class="cart-overlay" id="cart-overlay"></div>
